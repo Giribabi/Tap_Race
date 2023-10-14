@@ -1,0 +1,88 @@
+@keyframes score-rotate{
+  0%{
+    transform: scale(1.0) rotateY(0deg);
+  }
+  30%{
+    transform: scale(2.5) rotateY(360deg);
+  }
+65%{
+    transform: scale(3.5) rotateY(0deg);
+  }
+  100%{
+    transform: scale(5.0) rotateY(360deg);
+  }
+}
+#heading{
+  grid-area: h;
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#track-1 img{
+  transform: scaleX(3.0);
+  position: relative;
+  left: 30%;
+  grid-area: t1;
+}
+#track-2 img{
+  transform: scaleX(3.0);
+  position: relative;
+  left: 30%;
+  grid-area: t2;
+}
+#oppo1{
+  transform: translateY(-360%);
+}
+#oppo2{
+  transform: translateY(-260%);
+}
+#car1{
+  background-color: aqua;
+  border-radius: 5em;
+  padding: 3.5%;
+  font-weight: bold;
+  display: inline;
+  position: relative;
+  top: 2em;
+  margin: 5%;
+  opacity: 1;
+  transition: opacity 250ms;
+}
+#car1:hover{
+  opacity: 0.65;
+  transition: opacity 250ms;
+}
+#car2{
+  background-color: orange;
+  border-radius: 5em;
+  font-weight: bold;
+  padding: 3.5%;
+  display: inline;
+  position: relative;
+  top: 2em;
+  margin: 5%;
+  opacity: 1;
+  transition: opacity 250ms;
+}
+#car2:hover{
+  opacity: 0.65;
+  transition: opacity 250ms;
+}
+#reset{
+  position: relative;
+  width: 4%;
+  padding: 2%;
+  left: 750px;
+  border-radius: 5em;
+  color: white;
+  background-color: blueviolet;
+}
+#result{
+  position: relative;
+  left: 1100px;
+  bottom: 100px;
+  padding: 2px;
+  width: 5%;
+  transform: scale(0.01); 
+  background-color: greenyellow;
+}
